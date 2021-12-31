@@ -32,3 +32,17 @@ body {
 	font-size: 1.6em;
 	padding: 4px;
 }
+
+@media (min-width: 768px) {
+  #one {
+    display: none;
+  }
+
+  #two {
+    display: none;
+  }
+
+  #three {
+    display: none;
+  }
+}
