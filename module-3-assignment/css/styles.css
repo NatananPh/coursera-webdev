@@ -1,3 +1,31 @@
-* {
-	background-color: darkred;
+body {
+	font-family: 'Acme', sans-serif;
+}
+#header-nav {
+  background-color: silver;
+  border-radius: 0;
+  border-style: solid;
+}
+
+.navbar-brand h1 {
+	position: absolute;
+	margin-top: 0;
+	margin-left: 0;
+	font-size: 1.4em;
+}
+.collapsable-nav span {
+	text-align: center;
+}
+
+.row h2 {
+	text-align: center;
+}
+
+.row .col-xs-12 {
+	background-color: silver;
+	margin: 15px 15px 15px 15px;
+}
+
+.col-xs-12 p {
+	font-size: 1.6em;
 }
