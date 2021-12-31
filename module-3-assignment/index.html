@@ -7,16 +7,19 @@
     <title>Assignment Solution for Module 3</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
   </head>
 <body>
 
-<div class="container">
-   <div class="navbar-header">
-          <a href="index.html" class="home">
-            <h1 id="title">Food, LLC</h1>
-          </a>
-
-          
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <div class="navbar-brand">
+            <a href="index.html"><h1 class="text-left">Food, LLC</h1></a>
+          </div>
 
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
@@ -25,41 +28,54 @@
             <span class="icon-bar"></span>
           </button>
         </div>
-
-    <div class="row">
-    <h1 class="title">Our Menu</h1>
-      <div class="col-lg-4">
-        <div class="item">
-          <div class="item-title" id="one">
-            <h3>Chicken</h3>
-          </div>
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li>
+              <a href="menu-categories.html">
+                <span class="chicken"></span><br class="visible-xs"> Chicken</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="beef"></span><br class="visible-xs"> Beef</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="sushi"></span><br class="visible-xs"> Sushi</a>
+            </li>
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div>
+    </nav>
+  </header>
+  <div class="main-content">
+    <div class="container">
+      <h1 class="text-capitalize text-center"> our menu</h1>
+      <div class="row">
+        <div class="col-xs-12">
+          <h2 class="chicken"> Chicken</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa perferendis enim, consequatur obcaecati iusto! Quia aliquam, obcaecati explicabo adipisci non. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa perferendis enim, consequatur obcaecati iusto! Quia aliquam, obcaecati explicabo adipisci non.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae orci tellus. Mauris lacinia ipsum et arcu rhoncus viverra in a nisi. Aenean in tempus quam. Donec viverra dolor lorem, non mattis quam vehicula a. Nulla eu semper urna. Aenean arcu metus, aliquet at cursus porta, auctor nec leo. Maecenas interdum elit non ipsum rhoncus, a finibus augue consectetur. Integer neque nisi, pellentesque eu pretium eget, pretium vitae quam. Mauris a nulla nec nibh vestibulum tincidunt. Maecenas nisl metus, ultrices eget nisl vitae, maximus viverra mauris. Cras eu interdum dolor. Nullam ut eleifend metus. In placerat odio ultricies ultrices tincidunt. Integer elit nunc, laoreet at congue congue, bibendum eget lacus. Sed porttitor dolor ac varius maximus. Mauris luctus finibus neque a lacinia. Praesent eget diam rhoncus, commodo metus et, blandit nunc. Integer sed lacus eu risus luctus mattis vel efficitur diam. Sed ut cursus mauris, sed sollicitudin nisi. Praesent varius eget massa sed aliquet. Integer eleifend erat et urna vulputate, efficitur gravida nisi venenatis. Etiam vitae laoreet velit. Praesent nec hendrerit ligula, non tincidunt lectus. Aenean vitae nunc sollicitudin dui commodo viverra. Sed lacinia erat sed tellus iaculis, id vestibulum lectus dapibus. Integer sagittis mattis nisl, eu euismod risus imperdiet at. Proin ut rutrum mi. Maecenas dictum urna imperdiet dui faucibus pretium. Proin id elit ipsum. Quisque pulvinar feugiat luctus. Duis interdum elit ac semper rutrum. Nullam vitae tincidunt mauris, sit amet finibus enim. Donec ultrices, arcu quis tristique eleifend, dui sapien scelerisque felis, vitae lobortis nunc est nec dui. Ut et ornare diam. Curabitur dignissim non metus ut mollis. Cras neque nisi, dignissim nec tortor efficitur, vulputate eleifend ligula. Donec imperdiet lorem at mauris scelerisque maximus. Nam pulvinar dolor ipsum, quis venenatis sapien rhoncus a. Morbi venenatis urna condimentum, vehicula velit sed, finibus erat. Sed urna tellus, pretium id magna vel, pharetra rhoncus ipsum. Nunc feugiat ex magna, eget congue lorem imperdiet quis. In in ultricies mi. Quisque ullamcorper nulla id mattis vehicula. Nulla imperdiet faucibus facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor sapien a tempus imperdiet. Curabitur sit amet cursus nunc. Etiam vitae pellentesque sapien. Ut interdum enim est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras bibendum mollis nisi, ut rutrum felis fermentum a. Cras quis justo sed felis iaculis rhoncus.
           </p>
-        </div>
       </div>
-      <div class="col-lg-4">
-        <div class="item">
-         <div class="item-title" id="two">
-          <h3>Beef</h3>
-        </div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa perferendis enim, consequatur obcaecati iusto! Quia aliquam, obcaecati explicabo adipisci non. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa perferendis enim, consequatur obcaecati iusto! Quia aliquam, obcaecati explicabo adipisci non.
-        </p>
       </div>
-    </div>
-    <div class="col-lg-4 col-lg-tb">
-      <div class="item">
-       <div class="item-title" id="three">
-        <h3>Sushi</h3>
+      <div class="row">
+        <div class="col-xs-12">
+          <h2 class="Beef"> Beef</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae orci tellus. Mauris lacinia ipsum et arcu rhoncus viverra in a nisi. Aenean in tempus quam. Donec viverra dolor lorem, non mattis quam vehicula a. Nulla eu semper urna. Aenean arcu metus, aliquet at cursus porta, auctor nec leo. Maecenas interdum elit non ipsum rhoncus, a finibus augue consectetur. Integer neque nisi, pellentesque eu pretium eget, pretium vitae quam. Mauris a nulla nec nibh vestibulum tincidunt. Maecenas nisl metus, ultrices eget nisl vitae, maximus viverra mauris. Cras eu interdum dolor. Nullam ut eleifend metus. In placerat odio ultricies ultrices tincidunt. Integer elit nunc, laoreet at congue congue, bibendum eget lacus. Sed porttitor dolor ac varius maximus. Mauris luctus finibus neque a lacinia. Praesent eget diam rhoncus, commodo metus et, blandit nunc. Integer sed lacus eu risus luctus mattis vel efficitur diam. Sed ut cursus mauris, sed sollicitudin nisi. Praesent varius eget massa sed aliquet. Integer eleifend erat et urna vulputate, efficitur gravida nisi venenatis. Etiam vitae laoreet velit. Praesent nec hendrerit ligula, non tincidunt lectus. Aenean vitae nunc sollicitudin dui commodo viverra. Sed lacinia erat sed tellus iaculis, id vestibulum lectus dapibus. Integer sagittis mattis nisl, eu euismod risus imperdiet at. Proin ut rutrum mi. Maecenas dictum urna imperdiet dui faucibus pretium. Proin id elit ipsum. Quisque pulvinar feugiat luctus. Duis interdum elit ac semper rutrum. Nullam vitae tincidunt mauris, sit amet finibus enim. Donec ultrices, arcu quis tristique eleifend, dui sapien scelerisque felis, vitae lobortis nunc est nec dui. Ut et ornare diam. Curabitur dignissim non metus ut mollis. Cras neque nisi, dignissim nec tortor efficitur, vulputate eleifend ligula. Donec imperdiet lorem at mauris scelerisque maximus. Nam pulvinar dolor ipsum, quis venenatis sapien rhoncus a. Morbi venenatis urna condimentum, vehicula velit sed, finibus erat. Sed urna tellus, pretium id magna vel, pharetra rhoncus ipsum. Nunc feugiat ex magna, eget congue lorem imperdiet quis. In in ultricies mi. Quisque ullamcorper nulla id mattis vehicula. Nulla imperdiet faucibus facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor sapien a tempus imperdiet. Curabitur sit amet cursus nunc. Etiam vitae pellentesque sapien. Ut interdum enim est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras bibendum mollis nisi, ut rutrum felis fermentum a. Cras quis justo sed felis iaculis rhoncus.
+          </p>
       </div>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa perferendis enim, consequatur obcaecati iusto! Quia aliquam, obcaecati explicabo adipisci non. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa perferendis enim, consequatur obcaecati iusto! Quia aliquam, obcaecati explicabo adipisci non.
-      </p>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <h2 class="sushi"> Sushi</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae orci tellus. Mauris lacinia ipsum et arcu rhoncus viverra in a nisi. Aenean in tempus quam. Donec viverra dolor lorem, non mattis quam vehicula a. Nulla eu semper urna. Aenean arcu metus, aliquet at cursus porta, auctor nec leo. Maecenas interdum elit non ipsum rhoncus, a finibus augue consectetur. Integer neque nisi, pellentesque eu pretium eget, pretium vitae quam. Mauris a nulla nec nibh vestibulum tincidunt. Maecenas nisl metus, ultrices eget nisl vitae, maximus viverra mauris. Cras eu interdum dolor. Nullam ut eleifend metus. In placerat odio ultricies ultrices tincidunt. Integer elit nunc, laoreet at congue congue, bibendum eget lacus. Sed porttitor dolor ac varius maximus. Mauris luctus finibus neque a lacinia. Praesent eget diam rhoncus, commodo metus et, blandit nunc. Integer sed lacus eu risus luctus mattis vel efficitur diam. Sed ut cursus mauris, sed sollicitudin nisi. Praesent varius eget massa sed aliquet. Integer eleifend erat et urna vulputate, efficitur gravida nisi venenatis. Etiam vitae laoreet velit. Praesent nec hendrerit ligula, non tincidunt lectus. Aenean vitae nunc sollicitudin dui commodo viverra. Sed lacinia erat sed tellus iaculis, id vestibulum lectus dapibus. Integer sagittis mattis nisl, eu euismod risus imperdiet at. Proin ut rutrum mi. Maecenas dictum urna imperdiet dui faucibus pretium. Proin id elit ipsum. Quisque pulvinar feugiat luctus. Duis interdum elit ac semper rutrum. Nullam vitae tincidunt mauris, sit amet finibus enim. Donec ultrices, arcu quis tristique eleifend, dui sapien scelerisque felis, vitae lobortis nunc est nec dui. Ut et ornare diam. Curabitur dignissim non metus ut mollis. Cras neque nisi, dignissim nec tortor efficitur, vulputate eleifend ligula. Donec imperdiet lorem at mauris scelerisque maximus. Nam pulvinar dolor ipsum, quis venenatis sapien rhoncus a. Morbi venenatis urna condimentum, vehicula velit sed, finibus erat. Sed urna tellus, pretium id magna vel, pharetra rhoncus ipsum. Nunc feugiat ex magna, eget congue lorem imperdiet quis. In in ultricies mi. Quisque ullamcorper nulla id mattis vehicula. Nulla imperdiet faucibus facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor sapien a tempus imperdiet. Curabitur sit amet cursus nunc. Etiam vitae pellentesque sapien. Ut interdum enim est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras bibendum mollis nisi, ut rutrum felis fermentum a. Cras quis justo sed felis iaculis rhoncus.
+          </p>
+      </div>
+      </div>
     </div>
   </div>
-
-
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-1.11.3.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
