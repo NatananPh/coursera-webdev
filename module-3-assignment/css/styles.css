@@ -5,6 +5,7 @@ body {
   background-color: silver;
   border-radius: 0;
   border-style: solid;
+  border-color: #000;
 }
 
 .navbar-brand h1 {
@@ -12,6 +13,7 @@ body {
 	margin-top: 0;
 	margin-left: 0;
 	font-size: 1.4em;
+	color: #000;
 }
 .collapsable-nav span {
 	text-align: center;
@@ -28,4 +30,5 @@ body {
 
 .col-xs-12 p {
 	font-size: 1.6em;
+	padding: 4px;
 }
