@@ -35,11 +35,11 @@ WARNING!!! WARNING!!!
 // (Note, Step 2 will be done in the SpeakHello.js file.)
 (function () {
   var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
-  for (var name in names) {
-    if (name.slice(0,1) == "J" || name.slice(0,1) == "j") {
-      byeSpeaker.speak(name);
+  for (var i = 0; i<names.length;i++) {
+    if (names[i].slice(0,1) == "J" || names[i].slice(0,1) == "j") {
+      byeSpeaker.speak(names[i]);
     } else {
-      helloSpeaker.speak(name);
+      helloSpeaker.speak(names[i]);
     }
   }
 })();
